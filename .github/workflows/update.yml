@@ -20,6 +20,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+    - name: Set Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+
+    - name: Set up yarn
+      run: npm install -g yarn
+
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
@@ -29,7 +37,10 @@ jobs:
     - name: Update Memos #Memos更新
       run: |
         git clone https://github.com/usememos/memos.git
-        cd memos
+        cd ./memos/web
+        yarn && yarn build
+        cd ..
+        rm -rf ./server/dist && cp -r web/dist ./server/
         go build -o memos.moe ./main.go
         cp -r -f ./memos.moe ../
         cd ..
