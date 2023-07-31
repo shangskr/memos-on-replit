@@ -6,7 +6,7 @@
 
 2.运行一键安装脚本：
 ```
-bash <(curl -s https://raw.githubusercontent.com/SinzMise/memos-on-replit/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/SinzMise/memos-on-replit/main/install.sh)
 ```
 3.点击“Run”按钮
 
@@ -15,5 +15,5 @@ bash <(curl -s https://raw.githubusercontent.com/SinzMise/memos-on-replit/master
 ## 更新教程
 运行一键更新脚本：
 ```
-bash <(curl -s https://raw.githubusercontent.com/sxbai/memos-on-replit/master/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/SinzMise/memos-on-replit/main/update.sh)
 ```
