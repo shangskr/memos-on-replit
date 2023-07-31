@@ -28,7 +28,7 @@ jobs:
 
     - name: Update Memos #Memos更新
       run: |
-        git clone https://github.com/usememos/memos.git
+        git clone https://github.com/usememos/memos.git memos
         cd memos
         go build -o memos.moe ./main.go
         cp -r -f ./memos.moe ../
