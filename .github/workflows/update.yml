@@ -48,7 +48,7 @@ jobs:
     - name: Push Memos # 最新版Memos上传
       uses: github-actions-x/commit@v2.9
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ env.GITHUB_TOKEN }}
         commit-message: "Update memos"
         files: memos.moe
         rebase: 'true'
