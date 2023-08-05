@@ -1,5 +1,5 @@
 # Memos on replit
-基于[sxbai/memos-on-replit](https://github.com/sxbai/memos-on-replit)修改，利用github action构建最新版本Memos
+基于[sxbai/memos-on-replit](https://github.com/sxbai/memos-on-replit)修改，利用github action构建最新版本Memos ||
 fork于[SinzMise/memos-on-replit](https://github.com/SinzMise/memos-on-replit)，SinzMise利用github action构建最新版本Memos
 
 ## 使用教程
