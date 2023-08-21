@@ -20,7 +20,8 @@ bash <(curl -s https://raw.githubusercontent.com/shangskr/memos-on-replit/main/u
 ```
 4.利用github action构建最新版本Memos（通过[SinzMise](https://github.com/SinzMise/memos-on-replit)的教学习得此技能！）
  （1） 打开https://github.com/settings
- （2） 找到Developer settings打开Personal access tokens的Tokens (classic)创建一个不过期的Tokens待用
+ （2） 找到Developer settings打开Personal access tokens的Tokens (classic)创建一个不过期的Tokens待用 
+       (注意勾选repo的全部选项和勾选workflow)
  （3） 打开你fork的项目点击settings找到Actions中的General选中Read and write permissions保存
        然后打开Secrets and variables中的Actions点击New repository secret创建3个New repository secret
        分别为`GH_EMAIL``GH_NAME``GH_TOKEN`分别对应GitHub绑定的邮箱，GitHub的名称，和刚才（2）中创建的Tokens
