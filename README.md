@@ -22,7 +22,8 @@ bash <(curl -s https://raw.githubusercontent.com/shangskr/memos-on-replit/main/u
  （1） 打开https://github.com/settings
  （2） 找到Developer settings打开Personal access tokens的Tokens (classic)创建一个不过期的Tokens待用 
        (注意勾选repo的全部选项和勾选workflow)
- （3） 打开你fork的项目点击settings找到Actions中的General选中Read and write permissions保存
+ （3） 打开你fork的项目点击settings找到Actions中的General选中Read and write permissions和Allow GitHub Actions to create and approve pull requests
+保存
        然后打开Secrets and variables中的Actions点击New repository secret创建3个New repository secret
        分别为`GH_EMAIL``GH_NAME``GH_TOKEN`分别对应GitHub绑定的邮箱，GitHub的名称，和刚才（2）中创建的Tokens
  （4） 点击`Actions-->I understand my workflows, go ahead and enable them`
